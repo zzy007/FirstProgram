@@ -1,0 +1,65 @@
+<%@ page contentType="text/html; charset=utf-8" %> 
+<%@ page language="java" import="java.util.*" pageEncoding="gb2312"%>
+<%@ page import="java.sql.*"%>
+<%@ page import="com.mysql.jdbc.Driver" %> 
+<%
+	String path = request.getContextPath();
+	String basePath = request.getScheme() + "://"
+			+ request.getServerName() + ":" + request.getServerPort()
+			+ path + "/";
+%>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>资源网</title>
+
+<style type="text/css">
+.上传须知 {
+	color: #F00;
+}
+
+body {
+	background-color: #F0F0F0;
+}
+</style>
+</head>
+
+<body>
+<img src="img/biaoti.jpg" width="1537" height="304" />
+<marquee>
+<p class="滚动">欢迎您来到资源管理网站</p>
+</marquee>
+    
+                        <span class="滚动">
+                        <div class="header">
+<div class="wrapper">
+<div class="toploginleft" id="toplogin">
+            <span>登录名：</span><input id="txtusername" type="text" value="" />
+            <span>密码：</span><input id="txtuserpwd" type="password" value="" /><input type="button" class="login" onclick="indexuserlogin();" value="登录" />
+        <a href="/reg.html" target="_blank">注册</a><span>|</span> <a href="/reg.html" target="_blank">忘记密码</a></div>
+</div>
+<form action="shan1.jsp"  enctype="multipart/form-data" name="form1" id="form1">
+  <p>
+    <label for="资源名称"></label>
+    <label for="浏览"></label>
+    <a href="超级链接 个人资源管理.html">回到我的资源之家</a>
+ <a href="mupdate.jsp"><br /></a></p><p><a href="cha.jsp">查询资源</a>&nbsp; &nbsp; <a href="shan.jsp">删除资源</a>&nbsp; &nbsp; <a href="xiu.jsp">修改资源</a>&nbsp; &nbsp;       <a href="firstpage.jsp">王媛</a>&nbsp; &nbsp;  
+  <div align="center" style=""> 
+    <p>删除</p> 
+    <p>&nbsp;</p> 
+  <p>资源名称：
+      <label for="name"></label> 
+     <input type="text" name="name" id="ziyuanmingcheng2" /> 
+  </p> 
+
+  <p> 
+    <input type="submit" value="删除" /> 
+ </p> 
+  <p>&nbsp; </p> 
+  </div> 
+</p></form>
+</form>
+</body>
+</html>
